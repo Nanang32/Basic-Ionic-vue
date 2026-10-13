@@ -4,6 +4,7 @@ import HomePage from '../views/HomePage.vue'
 import TabsPage from '../views/TabsPage.vue'
 import FavoritePage from '../views/FavoritePage.vue'
 import ProfilePage from '../views/ProfilePage.vue'  
+import WeatherPage from '../views/WeatherPage.vue'
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -35,6 +36,10 @@ const routes: Array<RouteRecordRaw> = [
       {
         path: "profile",
         component: ProfilePage
+      },
+      {
+        path: "weather",
+        component: WeatherPage
       }
     ]
   },

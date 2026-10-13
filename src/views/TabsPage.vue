@@ -6,13 +6,14 @@ import {
   IonTabBar,
   IonTabButton,
   IonIcon,
-  IonLabel
+  IonLabel,
 } from "@ionic/vue";
 
 import {
   homeOutline,
   heartOutline,
-  personOutline
+  personOutline,
+  thermometerOutline,
 } from "ionicons/icons";
 </script>
 
@@ -24,29 +25,28 @@ import {
 
       <!-- Navigation tab bagian bawah -->
       <ion-tab-bar slot="bottom">
-        <ion-tab-button
-          tab="home"
-          href="/tabs/home"
-        >
+        <ion-tab-button tab="home" href="/tabs/home">
           <ion-icon :icon="homeOutline"></ion-icon>
           <ion-label>Beranda</ion-label>
         </ion-tab-button>
 
-        <ion-tab-button
-          tab="favorite"
-          href="/tabs/favorite"
-        >
+        <ion-tab-button tab="favorite" href="/tabs/favorite">
           <ion-icon :icon="heartOutline"></ion-icon>
           <ion-label>Favorit</ion-label>
         </ion-tab-button>
 
-        <ion-tab-button
-          tab="profile"
-          href="/tabs/profile"
-        >
+        <ion-tab-button tab="profile" href="/tabs/profile">
           <ion-icon :icon="personOutline"></ion-icon>
           <ion-label>Profil</ion-label>
         </ion-tab-button>
+
+        <ion-tab-button tab="weather" href="/tabs/weather">
+  <ion-icon
+    :icon="thermometerOutline"
+    aria-hidden="true"
+  />
+  <ion-label>Cuaca</ion-label>
+</ion-tab-button>
       </ion-tab-bar>
     </ion-tabs>
   </ion-page>
