@@ -14,6 +14,7 @@ import {
   heartOutline,
   personOutline,
   thermometerOutline,
+  partlySunnyOutline
 } from "ionicons/icons";
 </script>
 
@@ -41,12 +42,13 @@ import {
         </ion-tab-button>
 
         <ion-tab-button tab="weather" href="/tabs/weather">
-  <ion-icon
-    :icon="thermometerOutline"
-    aria-hidden="true"
-  />
-  <ion-label>Cuaca</ion-label>
-</ion-tab-button>
+          <ion-icon :icon="thermometerOutline" aria-hidden="true" />
+          <ion-label>Cuaca</ion-label>
+        </ion-tab-button>
+        <ion-tab-button tab="weather-api" href="/tabs/weather-api">
+          <ion-icon :icon="partlySunnyOutline" />
+          <ion-label>Perkiraan Hujan</ion-label>
+        </ion-tab-button>
       </ion-tab-bar>
     </ion-tabs>
   </ion-page>

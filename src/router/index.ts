@@ -5,6 +5,7 @@ import TabsPage from '../views/TabsPage.vue'
 import FavoritePage from '../views/FavoritePage.vue'
 import ProfilePage from '../views/ProfilePage.vue'  
 import WeatherPage from '../views/WeatherPage.vue'
+import WeatherApiPage from '../views/WeatherApiPage.vue'  
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -40,6 +41,10 @@ const routes: Array<RouteRecordRaw> = [
       {
         path: "weather",
         component: WeatherPage
+      },
+      {
+        path: "weather-api",
+        component: WeatherApiPage
       }
     ]
   },

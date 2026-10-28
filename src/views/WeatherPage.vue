@@ -27,6 +27,7 @@ const API_URL =
   "https://api.open-meteo.com/v1/forecast?latitude=-5.14861&longitude=119.43194&hourly=temperature_2m&forecast_hours=12";
 
 
+
 const parameterLokasi = new URL(API_URL).searchParams;
 const latitude = parameterLokasi.get("latitude") ?? "";
 const longitude = parameterLokasi.get("longitude") ?? "";
@@ -101,7 +102,7 @@ onMounted(ambilCuaca);
       <main class="weather-container">
         <section class="hero" aria-labelledby="judul-cuaca">
           <p class="eyebrow">OPEN-METEO · PRAKIRAAN PER JAM</p>
-          <h1 id="judul-cuaca">Suhu Makassar</h1>
+          <h1 id="judul-cuaca">Suhu</h1>
           <p>Lokasi: latitude {{ latitude }}, longitude {{ longitude }}</p>
           <p>Suhu udara pada ketinggian 2 meter. Waktu ditampilkan dalam UTC +8.</p>
         </section>

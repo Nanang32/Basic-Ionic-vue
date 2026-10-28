@@ -23,7 +23,7 @@ import { heartOutline } from "ionicons/icons";
       <div class="container">
         <ion-icon :icon="heartOutline"></ion-icon>
         <h2>Halaman Favorit</h2>
-        <p>Produk yang disukai akan ditampilkan di sini.</p>
+        <p>Produk yang disukai akan ditampilkan di sini. haloo</p>
       </div>
     </ion-content>
   </ion-page>
